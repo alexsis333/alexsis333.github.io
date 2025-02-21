@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 2 Trimestre - Cambio Climático</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Portada con Título y Navegación -->
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="title-box">
+                <div class="title">Proyecto 2do Trimestre, Matemáticas</div>
+                <div class="subtitle">Estadísticas del Cambio Climático en el Planeta</div>
+                <div class="author">By Alex Sisalima</div>
+            </div>
+            <div class="nav-links">
+                <a href="#introduccion" class="nav-box">Introducción</a>
+                <a href="#cambio_climatico" class="nav-box">¿Qué es el Cambio Climático?</a>
+                <a href="#estadisticas" class="nav-box">Estadísticas y Gráficas</a>
+                <a href="#conclusiones" class="nav-box">Conclusiones</a>
+                <a href="#informacion" class="nav-box">Información de esta Página</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Introducción -->
+    <section id="introduccion">
+        <div class="intro-overlay"></div>
+        <div class="intro-content">
+            <h2>Introducción</h2>
+            <p>
+                El clima de nuestro planeta ha estado experimentando transformaciones que han captado la atención de gobiernos, comunidades y científicos en todo el mundo. 
+                Estas transformaciones han generado debates, inquietudes y un impulso hacia la búsqueda de soluciones que permitan mitigar sus consecuencias. En este contexto, 
+                se hace indispensable analizar no solo los impactos evidentes en la sociedad, la economía y el medio ambiente, sino también entender las tendencias y estadísticas 
+                que reflejan el avance acelerado de estos cambios.
+            </p>
+        </div>
+    </section>
+
+    <section id="cambio_climatico" style="background: url('fondo_cambio.jpg') no-repeat center center/cover; color: white; text-align: center; padding: 50px;">
+        <div class="cambio-climatico-container">
+            <div class="cambio-climatico-texto">
+                <h2>¿Qué es el Cambio Climático?</h2>
+                <p>De acuerdo al IPCC, el cambio climático se refiere a cualquier cambio en el clima con el tiempo, debido a la variabilidad natural del sistema climático o como resultado de actividades humanas. Ambas causas están relacionadas con el efecto invernadero, que actúa atrapando el calor y recalentando el planeta. Puede ser estimado por la medida de las variaciones de algunas propiedades estadísticas, como el promedio de algunas variables en el tiempo (por ejemplo, precipitación, temperatura del aire, temperatura del mar, nivel del mar, etc.). Estas variaciones suelen ser graduales, permanentes en el tiempo y se mantienen durante varias décadas, lo que va cambiando, de forma lenta, las condiciones predominantes y de variabilidad del sistema climático. Este efecto está íntimamente relacionado con los gases de efecto invernadero (GEI) que son capaces de absorber parte de la radiación infrarroja emitida por la tierra y que la devuelven nuevamente a la superficie del planeta calentándolo un poco más.</p>
+            </div>
+            <div class="cambio-climatico-img">
+                <img src="imagen_cambio.jpg" alt="Cambio Climático" onclick="ampliarImagen(this)">
+            </div>
+        </div>
+    
+        <div class="info-links">
+            <a class="info-box" href="causasyefectos.html#causas">
+                <img src="causas.png" alt="Causas" class="info-icon">
+                Causas y efectos
+            </a>
+            <a class="info-box" href="soluciones.html#soluciones">
+                <img src="soluciones.png" alt="Soluciones" class="info-icon">
+                Soluciones
+            </a>
+        </div>
+    </section>
+    
+    <script>
+        function ampliarImagen(img) {
+            let modal = document.createElement("div");
+            modal.style.position = "fixed";
+            modal.style.top = "0";
+            modal.style.left = "0";
+            modal.style.width = "100vw";
+            modal.style.height = "100vh";
+            modal.style.background = "rgba(0,0,0,0.8)";
+            modal.style.display = "flex";
+            modal.style.justifyContent = "center";
+            modal.style.alignItems = "center";
+            modal.style.zIndex = "1000";
+            
+            let imgAmpliada = document.createElement("img");
+            imgAmpliada.src = img.src;
+            imgAmpliada.style.maxWidth = "90%";
+            imgAmpliada.style.maxHeight = "90%";
+            imgAmpliada.style.borderRadius = "10px";
+            
+            modal.appendChild(imgAmpliada);
+            document.body.appendChild(modal);
+            
+            modal.onclick = function() {
+                document.body.removeChild(modal);
+            };
+        }
+    </script>
+   
+    <!-- Secciones Adicionales -->
+   
+ <!-- Sección Estadísticas y Gráficas -->
+<section id="estadisticas">
+    <h2>Estadísticas y gráficas, Emisiones de CO2</h2>
+    <div class="estadisticas-container">
+        <div class="estadisticas-texto">
+            <p>
+                Las emisiones globales de CO2 alcanzaron un nuevo récord histórico en 2022, con un total de 
+                40.600 millones de toneladas emitidas. Según los datos del Global Carbon Project, no hay indicios de que 
+                se produzca la reducción necesaria y urgente requerida para limitar el calentamiento global a 1,5 grados centígrados 
+                para finales de este siglo.
+            </p>
+            <a href="https://www.icos-cp.eu/science-and-impact/global-carbon-budget/2022" 
+               class="info-box" target="_blank">
+                Datos del Global Carbon Project
+            </a>
+        </div>
+    </div>
+    
+    <div class="imagenes-estadisticas">
+        <a class="info-box" href="grafica1.html">Ver Gráfica 1</a>
+        <a class="info-box" href="grafica2.html">Ver Gráfica 2</a>
+        <a class="info-box" href="grafica3.html">Ver Gráfica 3</a>
+    </div>
+</section>
+
+
+
+<section id="conclusiones">
+    <div class="contenedor-cuadros">
+        <div class="cuadro">
+            <h2>Conclusiones</h2>
+            <ul class="lista">
+                <li>Ambos gráficos muestran un aumento considerable en las toneladas de CO2 emitidas.</li>
+                <li>Las emisiones son extremadamente altas, independientemente de la escala utilizada.</li>
+                <li>Es urgente implementar medidas efectivas para reducir las emisiones de CO2.</li>
+            </ul>
+        </div>
+
+        <div class="cuadro">
+            <h2>Recomendaciones</h2>
+            <ul class="lista">
+                <li>Incrementar la inversión en energías renovables como solar y eólica.</li>
+                <li>Establecer regulaciones más rigurosas en industrias y transporte.</li>
+                <li>Fomentar programas de educación sobre cambio climático.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="estadisticas-video">
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/GgnSeqIdKx4" 
+        title="Video sobre el cambio climático" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+
+<section id="informacion">
+    <div class="info-container">
+        <h2>Información de la Página</h2>
+        <p><strong>Creador:</strong> Alex Sisalima</p>
+        <p></strong>  Proyecto de 2do Trimestre Matemáticas</p>
+        <p><strong>Curso:</strong> 3 BGU "A"</p>
+        <p><strong>Profesora:</strong> Licenciada Juana Elizabeth</p>
+        <p><strong>Institución:</strong> Unidad Educativa Fiscomisional Río Upano</p>
+        <p class="mensaje-amor">Hecho con amor ❤️</p>
+    </div>
+</section>
+
+
+</body>
+</html>

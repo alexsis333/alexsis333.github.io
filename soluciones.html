@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones al Cambio Climático</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS principal -->
+    <link rel="stylesheet" href="soluciones.css"> <!-- Nuevo archivo CSS para esta sección -->
+    <style>
+        body {
+            background: url('fondopersonalizado2.jpeg') no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 900px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .regresar-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .regresar-btn:hover {
+            background: darkred;
+            transform: scale(1.05);
+        }
+
+        .principal-btn {
+            display: block;
+            margin: 30px auto 0;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            background: linear-gradient(to right, #2ecc71, #27ae60);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .principal-btn:hover {
+            background: linear-gradient(to right, #27ae60, #2ecc71);
+            transform: scale(1.05);
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:void(0);" class="regresar-btn" onclick="goBack()">Regresar</a>
+
+    <div class="container">
+        <h2>Soluciones al Cambio Climático</h2>
+        <p>Las actividades humanas impactan cada vez más en el clima y en la temperatura de la Tierra al quemar combustibles fósiles y talar las selvas pluviales. Eso añade enormes cantidades de gases de efecto invernadero a los que ya están naturalmente presentes en la atmósfera, aumentando el efecto invernadero y el calentamiento global. Lo que más daños determina es el consumo de carbón, petróleo y gas, que constituyen la mayor parte de las emisiones de gases de efecto invernadero. En 2019, de acuerdo con el informe Global Energy Perspective 2019 de McKinsey, las fuentes fósiles fueron responsables del 83% de las emisiones totales de CO2 y tan solo la producción de electricidad a través del carbón representó el 36% del total, aunque en 2020, debido al confinamiento ocasionado por la Covid-19, las emisiones disminuyeron drásticamente (fuente World Energy Outlook 2020).
+
+            Se ha estimado que la tendencia actual de las emisiones de gas carbónico debidas a la combustión del carbón es responsable de una tercera parte del aumento de 1 grado centígrado de las temperaturas medias anuales por encima de los niveles preindustriales y que, por consiguiente, es la fuente de emisión principal de la historia humana. En absoluto, el petróleo es la segunda fuente de emisiones, con una producción de 12.540 millones de toneladas de CO2 en 2019 (el 86% del total del carbón de 14.550 millones de toneladas).
+            
+            También la tala de los bosques provoca daños considerables: los árboles ayudan a regular el clima al absorber el gas carbónico de la atmósfera, por lo que con su tala se pierde este efecto beneficioso y el carbono almacenado en los árboles se emite a la atmósfera, contribuyendo a aumentar el efecto invernadero.
+            
+            Finalmente, el aumento de la cría intensiva del ganado y el uso de fertilizantes nitrogenados contribuyen a aumentar las emisiones de gases de efecto invernadero.</p>
+
+        <!-- Botón para ir a la página principal, sección Conclusiones y Recomendaciones -->
+        <a href="index.html#conclusiones" class="principal-btn">Ir a Conclusiones y Recomendaciones</a>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

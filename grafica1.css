@@ -1,0 +1,42 @@
+/* Estilos para la sección de Gráfica 1 */
+.grafica-container {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #000000; /* Fondo suave */
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.grafica-container h2 {
+    font-size: 2.5em;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.grafica-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Estilo del botón de regresar */
+.regresar-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4);
+}
+
+.regresar-btn:hover {
+    background: linear-gradient(135deg, #e65100, #bf360c);
+    transform: scale(1.1);
+}

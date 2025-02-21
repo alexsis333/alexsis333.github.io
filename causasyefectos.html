@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causas y Consecuencias</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS principal -->
+    <link rel="stylesheet" href="causas.css"> <!-- Nuevo archivo CSS para esta sección -->
+    <style>
+        body {
+            background: url('fondopersonalizado1.jpg') no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 900px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .regresar-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .regresar-btn:hover {
+            background: darkred;
+            transform: scale(1.05);
+        }
+
+        .principal-btn {
+            display: block;
+            margin: 30px auto 0;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            background: linear-gradient(to right, #2ecc71, #27ae60);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .principal-btn:hover {
+            background: linear-gradient(to right, #27ae60, #2ecc71);
+            transform: scale(1.05);
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:void(0);" class="regresar-btn" onclick="goBack()">Regresar</a>
+
+    <div class="container">
+        <h2>Causas y Consecuencias</h2>
+        <p>Pero, si se trata de un fenómeno tan beneficioso ¿por qué hoy estamos tan preocupados? ¿Qué quiere decir que el planeta está sobrecalentado? ¿Y qué es lo que se entiende por cambio climático? En la historia del planeta, siempre ha habido cambios climáticos. Sin embargo, el calentamiento climático al que asistimos desde hace unos 150 años es anómalo por ser causado por el hombre y sus actividades. Efectivamente, se llama efecto invernadero antrópico y se une al efecto invernadero natural. Con la revolución industrial, de repente el hombre emitió en la atmósfera millones de toneladas de gas carbónico y otros gases de efecto invernadero, y como consecuencia duplicó la cantidad de CO2 presente en la atmósfera respecto a las cantidades mínimas de los últimos 700 mil años (410-415 partes por millón respecto a 200-180 partes por millón). El fenómeno puede observarse también día a día gracias a los datos de los observatorios, como el activo de Mauna Loa, en el archipiélago de Hawái. Desde hace unos 15 años, los datos recogidos por miles de científicos de todo el mundo, analizados y sistematizados por el Panel Intergubernamental de Expertos sobre el Cambio Climático (IPCC, por sus siglas en inglés), ponen de manifiesto que el calentamiento global deriva del efecto invernadero antrópico, o sea, determinado por las actividades del hombre. En realidad, las bases científicas de la relación entre los niveles de gas carbónico y la temperatura ya habían sido establecidas en el siglo XIX, gracias al trabajo del Premio Nobel Svante Arrhenius, que confirmó en los años 60 el científico estadounidense David Keeling. Las consecuencias del cambio climático Respecto a los niveles preindustriales, la temperatura media del planeta aumentó 0,98° centígrados y la tendencia observada desde el año 2.000 hasta hoy prevé que, si no se pone remedio, podría llegar a un +1,5° más antes del 2030. El impacto del calentamiento global ya es evidente: el hielo marino ártico disminuyó de media un 12,85% por década, mientras que los registros de las mareas costeras muestran un aumento del nivel del mar de 3,3 milímetros por año desde 1870. La década 2009-2019 fue la más calurosa nunca registrada y 2020 el segundo año más caluroso de la historia, ligeramente por debajo del límite máximo establecido en 2016. Las temporadas de incendios se han vuelto más largas e intensas, como sucedió en Australia en 2019 y de 1990 a hoy cada año han aumentado los eventos meteorológicos extremos, como ciclones e inundaciones, que también ocurren en épocas del año atípicas con respecto al pasado y que son cada vez más arrolladores. Fenómenos como El Niño se han vuelto más irregulares y han determinado temibles sequías en zonas ya amenazadas por la aridez crónica, como el este de África, mientras que la Corriente del Golfo se está ralentizando y podría cambiar de rumbo. Las especies vegetales y animales se desplazan de forma imprevisible de un ecosistema al otro, acarreando daños incalculables a la biodiversidad de todo el mundo. Definir todo ello con el término cambio climático es correcto, pero no lo explica de forma suficientemente clara. Tenemos que empezar a hablar de crisis climática porque el clima siempre ha cambiado, pero no tan rápido ni con infraestructuras rígidas y complejas como las ciudades y el sistema productivo a los que los países más industrializados están acostumbrados</p>
+
+        <!-- Botón para ir a la página principal, sección Conclusiones y Recomendaciones -->
+        <a href="index.html#conclusiones" class="principal-btn">Ir a Conclusiones y Recomendaciones</a>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

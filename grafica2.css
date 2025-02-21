@@ -1,0 +1,71 @@
+/* Estilos para la sección de Gráfica 2 */
+.grafica-container {
+    padding: 80px 20px;
+    background-color: #f9f9f9; /* Fondo suave */
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.grafica-container h2 {
+    font-size: 2.6em;
+    color: #4caf50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.grafica-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grafica-container img:hover {
+    transform: scale(1.05); /* Efecto hover para la imagen */
+}
+
+
+/* Estilo del botón de regresar */
+.regresar-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #ff5722, #f44336); /* Gradiente en colores cálidos */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 30px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.regresar-btn:hover {
+    background: linear-gradient(135deg, #d32f2f, #c2185b); /* Colores más oscuros al hacer hover */
+    transform: scale(1.1); /* Aumento de tamaño al hacer hover */
+}
+/* Estilos adicionales para un toque más dinámico */
+.grafica-container h2 span {
+    color: #f50057; /* Resalta la palabra "Emisiones" */
+}
+
+@media (max-width: 768px) {
+    .grafica-container h2 {
+        font-size: 2.2em;
+    }
+
+    .grafica-container img {
+        max-width: 90%;
+    }
+
+    .regresar-btn {
+        font-size: 1.1em;
+        padding: 12px 30px;
+    }
+}
