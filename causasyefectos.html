@@ -4,59 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Causas y Consecuencias</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS principal -->
-    <link rel="stylesheet" href="causas.css"> <!-- Nuevo archivo CSS para esta sección -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="causas.css">
     <style>
+        /* Estilos Generales */
         body {
             background: url('fondopersonalizado1.jpg') no-repeat center center/cover;
-            min-height: 100vh;
+            min-height: 200vh;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         .container {
             background: rgba(0, 0, 0, 0.7);
-            padding: 40px;
+            padding: 190px;
             border-radius: 15px;
             max-width: 900px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeScale 1s ease-in-out forwards;
         }
 
-        .regresar-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background: red;
-            color: white;
-            text-decoration: none;
+        h2 {
+            font-size: 2em;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeSlideDown 1s ease-out 0.5s forwards;
+        }
+
+        p {
+            font-size: 1.1em;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeSlideUp 1s ease-out 0.7s forwards;
+            text-align: justify;
+            color: #ddd;
+        }
+
+        /* Resaltar palabras clave */
+        strong {
             font-weight: bold;
-            border-radius: 8px;
-            transition: 0.3s;
+            color: #ffcc00;
         }
 
-        .regresar-btn:hover {
-            background: darkred;
-            transform: scale(1.05);
+        /* Enlaces y términos clave en azul */
+        .highlight {
+            color: #00bfff;
+            font-weight: bold;
         }
 
-        .principal-btn {
+        /* Listas con viñetas cuadradas */
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        ul li {
+            font-size: 1.1em;
+            margin: 10px 0;
+            color: #ddd;
+        }
+
+        /* Botones */
+        .principal-btn, .regresar-btn {
             display: block;
-            margin: 30px auto 0;
+            margin: 20px auto 0;
             padding: 12px 30px;
             font-size: 1.2rem;
-            background: linear-gradient(to right, #2ecc71, #27ae60);
             color: white;
             text-decoration: none;
             border-radius: 30px;
             font-weight: bold;
             transition: all 0.3s ease;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 1s forwards;
+        }
+
+        .principal-btn {
+            background: linear-gradient(to right, #2ecc71, #27ae60);
         }
 
         .principal-btn:hover {
@@ -64,17 +98,80 @@
             transform: scale(1.05);
             box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.4);
         }
+
+        .regresar-btn {
+            background: red;
+            margin-top: 15px;
+            padding: 10px 25px;
+            font-size: 1rem;
+            border-radius: 20px;
+        }
+
+        .regresar-btn:hover {
+            background: darkred;
+            transform: scale(1.05);
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeScale {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes fadeSlideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeSlideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
-    <a href="javascript:void(0);" class="regresar-btn" onclick="goBack()">Regresar</a>
-
     <div class="container">
-        <h2>Causas y Consecuencias</h2>
-        <p>Pero, si se trata de un fenómeno tan beneficioso ¿por qué hoy estamos tan preocupados? ¿Qué quiere decir que el planeta está sobrecalentado? ¿Y qué es lo que se entiende por cambio climático? En la historia del planeta, siempre ha habido cambios climáticos. Sin embargo, el calentamiento climático al que asistimos desde hace unos 150 años es anómalo por ser causado por el hombre y sus actividades. Efectivamente, se llama efecto invernadero antrópico y se une al efecto invernadero natural. Con la revolución industrial, de repente el hombre emitió en la atmósfera millones de toneladas de gas carbónico y otros gases de efecto invernadero, y como consecuencia duplicó la cantidad de CO2 presente en la atmósfera respecto a las cantidades mínimas de los últimos 700 mil años (410-415 partes por millón respecto a 200-180 partes por millón). El fenómeno puede observarse también día a día gracias a los datos de los observatorios, como el activo de Mauna Loa, en el archipiélago de Hawái. Desde hace unos 15 años, los datos recogidos por miles de científicos de todo el mundo, analizados y sistematizados por el Panel Intergubernamental de Expertos sobre el Cambio Climático (IPCC, por sus siglas en inglés), ponen de manifiesto que el calentamiento global deriva del efecto invernadero antrópico, o sea, determinado por las actividades del hombre. En realidad, las bases científicas de la relación entre los niveles de gas carbónico y la temperatura ya habían sido establecidas en el siglo XIX, gracias al trabajo del Premio Nobel Svante Arrhenius, que confirmó en los años 60 el científico estadounidense David Keeling. Las consecuencias del cambio climático Respecto a los niveles preindustriales, la temperatura media del planeta aumentó 0,98° centígrados y la tendencia observada desde el año 2.000 hasta hoy prevé que, si no se pone remedio, podría llegar a un +1,5° más antes del 2030. El impacto del calentamiento global ya es evidente: el hielo marino ártico disminuyó de media un 12,85% por década, mientras que los registros de las mareas costeras muestran un aumento del nivel del mar de 3,3 milímetros por año desde 1870. La década 2009-2019 fue la más calurosa nunca registrada y 2020 el segundo año más caluroso de la historia, ligeramente por debajo del límite máximo establecido en 2016. Las temporadas de incendios se han vuelto más largas e intensas, como sucedió en Australia en 2019 y de 1990 a hoy cada año han aumentado los eventos meteorológicos extremos, como ciclones e inundaciones, que también ocurren en épocas del año atípicas con respecto al pasado y que son cada vez más arrolladores. Fenómenos como El Niño se han vuelto más irregulares y han determinado temibles sequías en zonas ya amenazadas por la aridez crónica, como el este de África, mientras que la Corriente del Golfo se está ralentizando y podría cambiar de rumbo. Las especies vegetales y animales se desplazan de forma imprevisible de un ecosistema al otro, acarreando daños incalculables a la biodiversidad de todo el mundo. Definir todo ello con el término cambio climático es correcto, pero no lo explica de forma suficientemente clara. Tenemos que empezar a hablar de crisis climática porque el clima siempre ha cambiado, pero no tan rápido ni con infraestructuras rígidas y complejas como las ciudades y el sistema productivo a los que los países más industrializados están acostumbrados</p>
+        <h2>Causas del Cambio Climático</h2>
+        <p>
+            La atmósfera terrestre está compuesta por diferentes gases que tienen como función mantener una temperatura apropiada para la vida. A este fenómeno natural se le llama <strong>efecto invernadero</strong>.
+        </p>
+        <p>
+            Es necesario que exista equilibrio en la emisión de gases de efecto invernadero para conservar su justa proporción. Sin embargo, las actividades humanas han aumentado la producción de estos gases provocando el llamado <strong>calentamiento global</strong>, la principal de las causas del cambio climático.
+        </p>
+        <p>
+            El ser humano es el responsable del cambio climático y sus emisiones de gases de efecto invernadero que calientan el planeta, como veremos más adelante. El gas más conocido es el <strong>CO2</strong>, causante del 63% del calentamiento global, pero existen otras causas:
+        </p>
+        <ul>
+            <li><strong>Deforestación:</strong> la industria maderera, la agricultura, la minería y la ganadería son las principales actividades económicas dedicadas a la tala de árboles.</li>
+            <li><strong>Aumento desproporcionado de gases de efecto invernadero:</strong> provocado por el uso de fertilizantes, la actividad química para el tratamiento de aguas residuales, la quema de combustibles fósiles, el transporte, la calefacción y el urbanismo.</li>
+            <li><strong>Crecimiento acelerado de la población:</strong> el aumento de la cantidad de habitantes influye en la producción de gases que exacerban el efecto invernadero.</li>
+        </ul>
 
-        <!-- Botón para ir a la página principal, sección Conclusiones y Recomendaciones -->
+        <h2>Consecuencias del Cambio Climático</h2>
+        <p>
+            Las consecuencias están afectando a procesos naturales de vital importancia. En el caso de los <span class="highlight">ecosistemas</span>, los humedales, por ejemplo, están en riesgo de desaparecer. Otro punto importante es el aumento de la temperatura media y la disminución de las precipitaciones, lo que está creando un caldo de cultivo ideal para los incendios. A continuación, te mostramos más consecuencias del cambio climático:
+        </p>
+        <ul>
+            <li><span class="highlight">Acidificación y contaminación del agua</span> debido a la concentración de dióxido de carbono en el aire.</li>
+            <li>Devastadores <strong>fenómenos meteorológicos</strong> como huracanes, ciclones, lluvias, sequías extremas o inundaciones.</li>
+            <li><strong>Muerte, migración y extinción de especies</strong> debido a la destrucción de hábitats marinos y terrestres.</li>
+            <li>Alteración del ciclo del agua.</li>
+            <li>Aumento del nivel del mar y de la temperatura global a causa del <strong>deshielo</strong>.</li>
+            <li>Aparición de enfermedades como el dengue y la malaria.</li>
+            <li>Agotamiento de <span class="highlight">recursos naturales</span> necesarios para la vida humana.</li>
+        </ul>
+
+        <p>
+            Existen muchas evidencias científicas que demuestran las graves causas y consecuencias del cambio climático en nuestro planeta. Es hora de abrir los ojos y tomar acción para construir un mundo mejor.
+        </p>
+
         <a href="index.html#conclusiones" class="principal-btn">Ir a Conclusiones y Recomendaciones</a>
+        <a href="javascript:void(0);" class="regresar-btn" onclick="goBack()">Regresar</a>
     </div>
 
     <script>
